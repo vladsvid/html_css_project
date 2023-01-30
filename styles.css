@@ -1,0 +1,36 @@
+.header {
+  background-color: yellow;
+}
+
+.navigation {
+  background-color: blue;
+}
+
+.menu {
+  text-align: center;
+  display: inline-block;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 100px;
+  padding-top: 0px;
+}
+
+li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.intro {
+  margin: auto;
+}
+
+.intro_text {
+  width: 300px;
+  display: inline-block;
+}
+
+.intro_pic {
+  display: inline-block;
+}
