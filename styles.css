@@ -1,36 +1,205 @@
-.header {
-  background-color: yellow;
+:root {
+  --colorBg: #2a2a2a;
+  --colorGrad: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+  --mainFontSize: 16px;
+  --fontSizeTablet: 10px;
 }
 
-.navigation {
-  background-color: blue;
+@font-face {
+  font-family: "NextReg";
+  src: url(../fonts/NEXT-ART_Regular.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NextSemBold";
+  src: url(../fonts/NEXT-ART_SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NextBold";
+  src: url(../fonts/NEXT-ART_Bold.woff) format(woff);
+  font-weight: 700;
+  font-style: bold;
 }
 
-.menu {
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: var(--mainFontSize);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  background-color: var(--colorBg);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto; /* what auto does */
+}
+
+.title {
+  font-size: 48px;
+  text-transform: uppercase;
   text-align: center;
-  display: inline-block;
 }
 
-.logo {
-  display: inline-block;
-  margin-right: 100px;
-  padding-top: 0px;
+.header .container {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+  align-items: center;
 }
 
-li {
-  display: inline;
-  margin-right: 15px;
+.nav__list {
+  display: flex;
 }
 
-.intro {
-  margin: auto;
+.nav__link {
+  font-family: "Roboto";
+  color: #fff;
 }
 
-.intro_text {
-  width: 300px;
-  display: inline-block;
+.nav__item {
+  margin-right: 30px;
 }
 
-.intro_pic {
-  display: inline-block;
+.nav__item:last-child {
+  margin: 0;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__title {
+  font-family: "NextBold";
+  font-size: 72px;
+}
+
+.hero__subtitle {
+  font-size: 40px;
+}
+
+/* ABOUT */
+
+section.about {
+  background: var(--colorBg);
+  padding: 10% 0;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.skills__item {
+  width: 270px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorBg);
+  box-shadow: 0px 4px 6px rgb(0 0 0 / 47%);
+  border-radius: 29px;
+  margin: 0 30px 30px 0;
+}
+
+.skills__item:nth-child(4) {
+  margin-right: 0;
+}
+
+.skills__img {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.me {
+  background: url("../img/Ellips.png") no-repeat;
+  background-size: contain;
+  height: 950px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.me__block {
+  width: 456px;
+  font-size: 20px;
+  background-color: #2c2c2c;
+  padding: 63px;
+  border-radius: 14px;
+  background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+}
+
+.me__pic {
+  padding: 27px;
+  border-radius: 15px;
+  background: #2c2c2c;
+}
+
+.me__pic.first {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.me__pic.second {
+  position: absolute;
+  right: 0;
+}
+.me__pic.third {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+
+.portfolio {
+  padding: 5% 0 8% 0;
+}
+
+.portfolio_content {
+  display: flex;
+  padding: 50px;
+  background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+  box-shadow: 0px 4px 15px rgb(27 27 27 / 28%);
+  border-radius: 29px;
+}
+
+.portfolio__img {
+  margin-right: 80px;
+}
+
+.portfolio__title {
+  font-family: "Arodora Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 25px;
 }
