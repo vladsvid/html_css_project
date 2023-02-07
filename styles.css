@@ -184,6 +184,10 @@ section.about {
 }
 
 .portfolio_content {
+  text-align: center;
+}
+
+.portfolio__work {
   display: flex;
   padding: 50px;
   background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
@@ -202,4 +206,64 @@ section.about {
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 25px;
+}
+
+.portfolio__text {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+a.portfolio__btn {
+  color: #e2a100;
+  font-size: 18px;
+}
+
+a.portfolio__btn:after {
+  content: url(../img/arrow.png);
+  width: 13px;
+  height: 8px;
+  margin-left: 7px;
+}
+/* FOOTER */
+.footer {
+  background: linear-gradient(130.68deg, #414141 0%, #2d2d2d 100.52%);
+  padding: 3% 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .container .nav__item {
+  margin-bottom: 5px;
+}
+
+.footer .container .nav__item:last-child {
+  margin-bottom: 0;
+}
+
+ul.social__list {
+  display: flex;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 10px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+svg.social__icon {
+  fill: #fff;
+  width: 32px;
+  height: 32px;
+  transition: 0.3s;
+}
+
+svg.social__icon:hover {
+  fill: #00c4f0;
 }
